@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    font-family: 'Helvetica', sans-serif;
+    /*    font: 'helvetica';*/
+}
+
+header {
+    background-image: url('/img/studiorabbit.jpg');
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.navigation {
+
+    /*    position: absolute;*/
+    margin-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+}
+
+nav img {
+    /*    position: absolute;*/
+    margin: 1rem;
+    max-width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    margin: .5rem;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.studiorabbit {
+    width: 100vw;
+}
+
+article {
+    position: relative;
+    color: white;
+
+}
+
+article img {
+    width: 100vw;
+    position: relative;
+}
+
+article h1 {
+    position: absolute;
+    bottom: 0;
+    margin: 2rem;
+}
+
+footer {
+    background-color: darkgray;
+}
+
+footer li a {
+    color: black;
+}
+
+footer ul {
+
+    list-style: none;
+}
