@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url('/img/studiorabbit.jpg');
+    background-image: url('img/studiorabbit.jpg');
     height: 80vh;
     width: 100%;
     background-size: cover;
