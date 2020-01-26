@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    font-family: 'Helvetica', sans-serif;
+    /*    font: 'helvetica';*/
+    background-image: url('../img/bg_programma.jpg');
+}
+
+#homepagina {
+    background-image: url('../img/background.jpg');
+}
+
+#homeheader {
+    background-image: url('../img/studiorabbit.jpg');
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 8vh;
+    background-color: rgb(36, 36, 36);
+}
+
+nav img {
+ height: 8vh;
+ 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    
+}
+nav li {
+    
+    list-style: none;
+}
+
+nav ul a {
+ color: rgb(226, 226, 226);
+ text-decoration: none;
+ letter-spacing: 3px;
+ font-weight: bold;
+ font-size: 14px;
+ 
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.studiorabbit {
+    width: 100vw;
+}
+
+form {
+    padding: 1rem;
+    background-color: darkgrey;
+    height: 7rem;
+}
+
+/* bron: https://codepen.io/rouws/pen/PooqEYO */
+
+fieldset {
+    border:none;
+}
+
+legend {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+form div {
+    position: relative;
+    margin: 0.8rem 0;
+}
+input {
+    font-size: 0.9rem;
+}
+
+
+article.a-artiest {
+    height: 20rem;
+    width: 20rem;
+    overflow: hidden;
+    position: relative;
+    color: white;
+
+}
+
+
+article.b-artiest {
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    color: white;
+
+}
+
+
+
+article img {
+    display: flex;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    transition: ease-in 0.8s;
+    
+}
+
+article img:hover {
+    transform: scale(1.2);
+    
+}
+
+ .tag {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+} 
+
+
+article button {
+    position: absolute;
+    top: 0;
+    height: 3rem;
+    width: 3rem;
+    margin: .5rem;
+    background-color: transparent;
+    border-radius: .5rem;
+    border: none;
+
+}
+article span  {
+    position: absolute;
+    bottom: 0;
+    margin: .5rem;
+    background-color: transparent;
+    border-radius: .5rem;
+    border: none;
+
+}  
+
+
+button img {
+    width: 100%;
+
+}
+
+section {
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+section ul {
+    position: absolute;
+    margin: 0;
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.filters {
+    height: 5rem;
+    background: #272d31;
+}
+
+.filters ul {
+    list-style: none;
+}
+
+.line-up {
+    padding: 1rem;
+    display: grid;
+    margin: auto;
+    width: 20rem;
+    grid-template-columns: 20rem;
+    /*    grid-template-rows: 1fr;*/
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+
+}
+
+.line-up-b {
+    padding: 1rem;
+    display: grid;
+    margin: auto;
+    width: 15rem;
+    grid-template-columns: 15rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+
+}
+
+footer {
+    display: flex;
+    background-color: #212121;
+    justify-content: center;
+    height: 50vh;
+}
+
+footer li a {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+/* bron:"https://css-tricks.com/snippets/css/complete-guide-grid" */
+
+@media (max-width: 63rem) {
+    body { 
+        overflow-x: hidden;
+     }
+     
+    
+    nav ul {
+        position: absolute;
+        z-index: 10;
+        right: 0px;
+        height: 92vh;
+        top: 5.7vh;
+        background-color: rgb(36, 36, 36);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%); 
+        transition: transform 0.5s ease-in;
+    }
+
+ .burger {
+     display:block;
+ }
+}
+.nav-active {
+    transform: translateX(0%); 
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+
+}
+
+    footer  {
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+
+
+@media (min-width: 43rem) {
+    .line-up {
+        padding: 1rem;
+        display: grid;
+        margin: auto;
+        width: 41rem;
+        grid-template-columns: 20rem 20rem;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    .line-up-b {
+        padding: 1rem;
+        display: grid;
+        margin: auto;
+        width: 47rem;
+        grid-template-columns: 15rem 15rem 15rem;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+
+    }
+}
+
+@media (min-width: 63rem) {
+    .line-up {
+        padding: 1rem;
+        display: grid;
+        margin: auto;
+        width: 62rem;
+        grid-template-columns: 20rem 20rem 20rem;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+}
+
+@media (min-width: 84rem) {
+    .line-up {
+        padding: 1rem;
+        display: grid;
+        margin: auto;
+        width: 83rem;
+        grid-template-columns: 20rem 20rem 20rem 20rem;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+}
